@@ -1,0 +1,28 @@
+section {
+    width: inherit;
+    height: fit-content;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.text {
+    font-weight: 400;
+    padding: auto 2rem;
+    font-size: 3rem;
+}
+
+.text--green {
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.image {
+    background: url('../../../assets/imgs/backgound-image.png') no-repeat;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}

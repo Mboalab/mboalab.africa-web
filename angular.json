@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mboalab-africa-web": {
+    "mboalab.africa-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mboalab-africa-web",
+            "outputPath": "dist/mboalab.africa-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mboalab-africa-web:build:production"
+              "browserTarget": "mboalab.africa-web:build:production"
             },
             "development": {
-              "browserTarget": "mboalab-africa-web:build:development"
+              "browserTarget": "mboalab.africa-web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mboalab-africa-web:build"
+            "browserTarget": "mboalab.africa-web:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "mboalab-africa-web"
+  "defaultProject": "mboalab.africa-web"
 }
