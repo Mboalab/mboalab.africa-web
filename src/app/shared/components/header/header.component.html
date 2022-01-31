@@ -40,12 +40,12 @@
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 menu">
             <ng-container *ngFor="let item of navItems" class="d-flex">
                 <li *ngIf="item.children; else nonDropdown" class="nav-item menu-item">
-                    <a class="nav-link link-dark" href="#" role="button" aria-expanded="false">{{item.name}}</a>
+                    <a routerLink="{{item.link}}" class="nav-link link-dark" role="button" aria-expanded="false">{{item.name}}</a>
                         <ul class="drop-menu">
                             <ng-container *ngFor = "let child of item.children">
-                                <li class="nav-item drop-menu-item"><a routerLinkActive="active" class="dropdown-item " aria-labelledby="dropdownUser1" href="#">{{child.name}}</a></li>
+                                <li class="nav-item drop-menu-item"><a routerLinkActive="active" class="dropdown-item " aria-labelledby="dropdownUser1" routerLink="/{{child.link}}">{{child.name}}</a></li>
                             </ng-container>
-                        </ul>
+                    </ul>
                 </li>
                 <ng-template #nonDropdown>
                     <li  class="nav-item">
