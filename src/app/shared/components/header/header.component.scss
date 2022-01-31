@@ -33,14 +33,14 @@
   height: auto;
 }
 
-.active {
-  font-weight: bolder;
-  color: var(--main-color);
-}
-
 .nav--login {
   border: 1px solid #c0bfbf;
   border-radius: 4px;
+}
+
+.active-link {
+  font-weight: 700;
+  color: var(--main-color);
 }
 
 // .link-dark:focus,
