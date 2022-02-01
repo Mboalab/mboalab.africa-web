@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuComponent } from './menu.component';
+import { BeneficialBioComponent } from './beneficial-bio.component';
 
-describe('MenuComponent', () => {
-  let component: MenuComponent;
-  let fixture: ComponentFixture<MenuComponent>;
+describe('BeneficialBioComponent', () => {
+  let component: BeneficialBioComponent;
+  let fixture: ComponentFixture<BeneficialBioComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MenuComponent ]
+      declarations: [ BeneficialBioComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MenuComponent);
+    fixture = TestBed.createComponent(BeneficialBioComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

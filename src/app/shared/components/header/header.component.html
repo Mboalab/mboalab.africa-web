@@ -10,13 +10,13 @@
                     <a routerLink="{{item.link}}" routerLinkActive="active-link" class="nav-link link-dark" role="button" aria-expanded="false">{{item.name}}</a>
                         <ul class="drop-menu">
                             <ng-container *ngFor = "let child of item.children">
-                                <li class="nav-item drop-menu-item"><a routerLinkActive="active-link" class="dropdown-item " aria-labelledby="dropdownUser1" routerLink="/{{child.link}}">{{child.name}}</a></li>
+                                <li class="nav-item drop-menu-item"><a routerLinkActive="active-link" class="dropdown-item " aria-labelledby="dropdownUser1" [routerLink]="['/'+item.link, child.link]">{{child.name}}</a></li>
                             </ng-container>
                     </ul>
                 </li>
                 <ng-template #nonDropdown>
                     <li  class="nav-item">
-                        <a routerLinkActive="active-link" routerLink="/{{item.link}}"
+                        <a routerLinkActive="active-link" routerLink="{{item.link}}"
                             class="nav-link link-dark px-2">{{item.name}}</a>
                     </li>
                 </ng-template>
@@ -24,7 +24,7 @@
         </ul>
 
         <div class="col-md-3 text-end">
-            <button type="button" class="btn me-2 nav--login">Login</button>
+            <button type="button" class="btn me-2 btn--bordered">Login</button>
             <button type="button" class="btn">Sign-up</button>
         </div>
     </header>

@@ -10,7 +10,6 @@ import { IconTwitterComponent } from './components/icon-twitter/icon-twitter.com
 import { IconYoutubeComponent } from './components/icon-youtube/icon-youtube.component';
 import { IconInstagramComponent } from './components/icon-instagram/icon-instagram.component';
 import { IconLinkedinComponent } from './components/icon-linkedin/icon-linkedin.component';
-import { MenuModule } from './components/menu/menu.module';
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { MenuModule } from './components/menu/menu.module';
   ],
   imports: [
     CommonModule,
-    RouterModule,
-    MenuModule
+    RouterModule
   ],
   exports: [
     FooterComponent,
