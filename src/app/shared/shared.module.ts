@@ -10,6 +10,10 @@ import { IconTwitterComponent } from './components/icon-twitter/icon-twitter.com
 import { IconYoutubeComponent } from './components/icon-youtube/icon-youtube.component';
 import { IconInstagramComponent } from './components/icon-instagram/icon-instagram.component';
 import { IconLinkedinComponent } from './components/icon-linkedin/icon-linkedin.component';
+import { LogoShutterworthComponent } from './components/logo-shutterworth/logo-shutterworth.component';
+import { LogoLightbackComponent } from './components/logo-lightback/logo-lightback.component';
+import { LogoBeneficialBioComponent } from './components/logo-beneficial-bio/logo-beneficial-bio.component';
+import { LogoOpenSocietyComponent } from './components/logo-open-society/logo-open-society.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { IconLinkedinComponent } from './components/icon-linkedin/icon-linkedin.
     IconTwitterComponent,
     IconYoutubeComponent,
     IconInstagramComponent,
-    IconLinkedinComponent
+    IconLinkedinComponent,
+    LogoShutterworthComponent,
+    LogoLightbackComponent,
+    LogoBeneficialBioComponent,
+    LogoOpenSocietyComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +42,11 @@ import { IconLinkedinComponent } from './components/icon-linkedin/icon-linkedin.
     IconTwitterComponent,
     IconYoutubeComponent,
     IconInstagramComponent,
-    IconLinkedinComponent
+    IconLinkedinComponent,
+    LogoShutterworthComponent,
+    LogoLightbackComponent,
+    LogoBeneficialBioComponent,
+    LogoOpenSocietyComponent
   ]
 })
 export class SharedModule { }

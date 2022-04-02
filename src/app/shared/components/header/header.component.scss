@@ -37,6 +37,10 @@
   font-weight: 700;
   color: var(--main-color);
 }
+.btn--bordered {
+  border: 1px solid #c0bfbf;
+  border-radius: 4px;
+}
 
 // .link-dark:focus,
 // .link-dark:hover {
